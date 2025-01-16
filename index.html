@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Asking her</title>
+</head>
+<body>
+<div class="container">
+<div>
+    <h1 class="text">good m0rning</h1>
+    <h1 class="text">chandigarh</h1>
+</div>
+<div class="gif_container">
+       <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdnNzcmpjbnVjZGp0YWF3bThuY2ZpejZjdXJpODFsNzlxdGE4aTZ1cCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/zETKXSlpyUl5NSL5ow/giphy.gif"
+<div class="buttons">
+        <button class="btn" id="yesButton" onclick="nextPage()">Yes</button>
+        <button class="btn" id="noButton" onmouseover="moveButton()">No</button>
+</div>
+</div>
+
+<script>
+    function nextPage() {
+        window.location.href="yes.html";
+    }
+
+    function moveButton() {
+        var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth) - 70;
+        var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight) - 40;
+        document.getElementById('noButton').style.left = x + 'px';
+        document.getElementById('noButton').style.top = y + 'px';
+    }
+</script>
+</body>
+</html>
